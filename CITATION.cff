@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "EDBS-LLM-HH: Event-Driven Beam Search Large Language Model Hyper-Heuristic for Online Bin Packing"
+authors:
+  - family-names: Tabatabaei
+    given-names: Amirhosein
+  - family-names: Khoshalhan
+    given-names: Farid
+date-released: 2026
+url: "https://github.com/amirhoseintabatabaei/EDBS-LLM-HH"
+preferred-citation:
+  type: conference-paper
+  title: "Event-Driven Beam Search Large Language Model Hyper-Heuristic for Online Bin Packing"
+  authors:
+    - family-names: Tabatabaei
+      given-names: Amirhosein
+    - family-names: Khoshalhan
+      given-names: Farid
+  collection-title: "Proceedings of the 12th International Conference on Industrial and Systems Engineering (ICISE)"
+  year: 2026

@@ -1,0 +1,21 @@
+Two functional Online Bin Packing heuristic functions are provided below.
+
+Parent Scoring Function 1:
+{code1}
+
+Parent Scoring Function 2:
+{code2}
+
+Performance reflection:
+{reflection}
+
+Task: Produce a new hybrid scoring function that combines the mathematical terms or scoring logic from both parents.
+
+STRICT RULES:
+1. SIGNATURE: Must match score_bin(bin_remaining, item, capacity, avg_bins_rem, n_open_bins).
+2. NO IMPORTS: No import statements allowed. Use built-in functions directly.
+3. TIGHTNESS FOCUS: Higher score means higher priority. Heavily favor tight fits by penalizing leftover space non-linearly, e.g., using terms like 1.0 / (bin_remaining - item + 1e-5) or -(bin_remaining - item)**2.
+4. LOGIC MERGE: Blend Parent 1's primary capacity scoring term with Parent 2's fine-tuning penalty/bonus terms.
+
+FIRST, write 2 sentences explaining how you blend the mathematical terms.
+THEN, return ONLY the executable code inside a single python code block.

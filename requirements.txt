@@ -1,0 +1,6 @@
+google-genai>=0.3.0
+python-dotenv>=1.0.0
+matplotlib>=3.7.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0  # optional: enables Wilcoxon significance testing in ablation_study/

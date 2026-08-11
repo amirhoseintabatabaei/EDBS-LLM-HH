@@ -1,0 +1,18 @@
+The previous self-correction attempt failed to resolve the execution error.
+
+Function:
+{code}
+
+Crash Report:
+{crash_report}
+
+TASK:
+Perform a heavy mathematical rewrite or add safety boundaries to prevent any floating-point overflow or domain error under all conditions.
+
+STRICT RULES:
+1. NO IMPORTS: Do NOT use any 'import' statements.
+2. SIGNATURE: Maintain exact signature: score_bin(bin_remaining, item, capacity, avg_bins_rem, n_open_bins).
+3. SAFETY: Ensure safe division (add 1e-6 to denominators) and guard log/exp calls. Ensure tight-fit preference is preserved safely.
+
+FIRST, write 1 sentence explaining the structural rewrite.
+THEN, return ONLY the executable code inside a single python code block.

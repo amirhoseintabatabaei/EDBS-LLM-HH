@@ -1,0 +1,17 @@
+This is an Online Bin Packing scoring function:
+
+{code}
+
+Performance reflection:
+{reflection}
+
+Task: Produce a {level}-modified version of this scoring function by altering its mathematical terms, scaling factors, or non-linear weightings to improve packing density and minimize gap.
+
+STRICT RULES:
+1. SIGNATURE: Must match score_bin(bin_remaining, item, capacity, avg_bins_rem, n_open_bins).
+2. NO IMPORTS: Do NOT include any 'import' statements.
+3. RETURN VALUE: Must return a single float score (or -float('inf') if bin_remaining < item). Higher score = higher priority.
+4. TIGHTNESS ENHANCEMENT: Refine terms to prioritize bins that leave minimal space after item placement.
+
+FIRST, write 2 sentences analyzing the reflection and explaining your mathematical modification.
+THEN, return ONLY the new code in a single python code block.

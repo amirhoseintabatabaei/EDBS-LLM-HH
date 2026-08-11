@@ -1,0 +1,21 @@
+You must generate exactly {n} completely DIFFERENT Python scoring functions for the Online Bin Packing problem.
+
+CRITICAL DIVERSITY & PERFORMANCE REQUIREMENT:
+Each function MUST implement a completely different mathematical philosophy (e.g., inverse-gap tightness, Falkenauer non-linear fit, dynamic capacity ratios, probabilistic entropy) so they do NOT make identical bin choices.
+
+SIGNATURE & ENVIRONMENT VARIABLES:
+def score_bin(bin_remaining, item, capacity, avg_bins_rem, n_open_bins):
+    # Return a float score. Higher = better fit (engine picks argmax).
+    # MUST return -float('inf') if bin_remaining < item.
+
+GUIDELINES FOR HIGH PERFORMANCE:
+- To achieve Best-Fit behavior, assign higher scores when (bin_remaining - item) is near zero.
+- Use non-linear terms like -((bin_remaining - item)**2), 1.0 / (bin_remaining - item + 1e-5), or ratios against avg_bins_rem.
+
+STRICT RULES:
+1. NO IMPORTS & NO 'math.' PREFIX: Use built-in operations directly (abs, min, max, log, exp, sqrt).
+2. MUST return -float('inf') when bin_remaining < item.
+3. Ensure functions are diverse and mathematically sound.
+
+FIRST, write 1 sentence for each function explaining its unique mathematical logic.
+THEN, return each function inside a separate python code block (```python ... ```).

@@ -1,0 +1,14 @@
+The portfolio suffered a performance drop.
+Status report:
+{reflection}
+
+Generate {n} completely new scoring functions with fresh mathematical approaches.
+
+STRICT RULES:
+1. SIGNATURE: score_bin(bin_remaining, item, capacity, avg_bins_rem, n_open_bins)
+2. NO IMPORTS: No import statements allowed.
+3. BEST-FIT PRINCIPLE: Higher score = higher priority. Designed functions MUST penalize remaining space after item placement, using exponential decay, inverse gaps, or non-linear scaling (e.g., -((bin_remaining - item) / capacity)**2).
+4. Must return a float score (or -float('inf') if item > bin_remaining).
+
+FIRST, write 2 sentences diagnosing the failure and stating your new mathematical concept.
+THEN, return each new function in a separate python code block.
